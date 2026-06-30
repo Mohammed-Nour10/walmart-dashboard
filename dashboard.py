@@ -42,7 +42,7 @@ BENCHMARK = pd.DataFrame({
 @st.cache_data
 def charger_donnees():
     """Charge le dataset nettoye produit par 02_preprocessing."""
-    df = pd.read_csv(DATA_DIR / "df_clean.csv", parse_dates=["Date"])
+    df = pd.read_csv(DATA_DIR / "df_clean.csv.gz", parse_dates=["Date"])
     return df
 
 
